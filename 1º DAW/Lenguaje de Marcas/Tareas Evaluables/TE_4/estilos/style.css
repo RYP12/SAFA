@@ -167,11 +167,13 @@ h3{
     }
 
     .pelis { 
-        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr)); 
+        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+        column-gap: auto;
     }
 
     .pelis_items {
         grid-template-rows: repeat(3, 8em);
+        
 
     }
 
@@ -179,5 +181,43 @@ h3{
         width: 8em;
     }
 
+
+}
+
+@media (max-width: 1400px){
+    #logo{
+        width:5em;
+    }
+    .nav_principal{
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .nav_principal_items { 
+        font-size: 1rem; 
+    }
+    .nav_secundario { 
+        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+    }
+
+    .pelis { 
+        grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+         
+    }
+
+    .pelis_items {
+        grid-template-rows: repeat(3, 8em);
+        grid-template-columns: auto;
+
+    }
+
+    .cartel{
+        width: 8em;
+    }
+
+    h3{
+        width: auto;
+        font-size: auto;
+        text-align: center;
+    }
 
 }
