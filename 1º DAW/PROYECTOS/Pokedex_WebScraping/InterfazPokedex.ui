@@ -104,7 +104,11 @@ border-radius: 5px;
             <item>
              <widget class="QStackedWidget" name="stackedWidget">
               <property name="currentIndex">
+<<<<<<< HEAD
                <number>1</number>
+=======
+               <number>2</number>
+>>>>>>> 92b0a53cb5082b801ae6a94ad9ee3b76ed87da1d
               </property>
               <widget class="QWidget" name="page_inicio">
                <layout class="QVBoxLayout" name="verticalLayout_4" stretch="8,2">
@@ -154,7 +158,155 @@ border-radius: 5px;
                </layout>
               </widget>
               <widget class="QWidget" name="page_registrar"/>
-              <widget class="QWidget" name="page_actualizar"/>
+              <widget class="QWidget" name="page_actualizar">
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QFrame" name="frame_16">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Shape::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Shadow::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_10" stretch="1,8,1">
+                   <item>
+                    <widget class="QFrame" name="frame_17">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(124, 124, 124);</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Shape::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Shadow::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_7">
+                      <item>
+                       <widget class="QLabel" name="label_11">
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(0, 0, 0);</string>
+                        </property>
+                        <property name="text">
+                         <string>REGISTRAR</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_18">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(124, 124, 124);</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Shape::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Shadow::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_11" stretch="0,0,0,0,0,0,0,0">
+                      <item>
+                       <widget class="QFrame" name="frame_21">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_27">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_26">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_25">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_24">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_23">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_22">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_20">
+                        <property name="frameShape">
+                         <enum>QFrame::Shape::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Shadow::Raised</enum>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_19">
+                     <property name="frameShape">
+                      <enum>QFrame::Shape::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Shadow::Raised</enum>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
               <widget class="QWidget" name="page_eliminar"/>
               <widget class="QWidget" name="page_ajustes"/>
               <widget class="QWidget" name="page_baseDatos">
