@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'jersey-m54', sans-serif;
+}
+
+/* Navegador */
+
+nav{
+    border: solid 1px #000;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10%;
+}
+
+#menu {
+    border: solid 1px #000;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10%;
+}
+
+#cuenta {
+    border: solid 1px #000;
+    justify-content: center;
+    align-items: center;
+
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: auto;
+}
+
+#logo {
+    border: solid 1px #000;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 200px;
+    height: 200px;
+}
