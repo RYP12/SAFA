@@ -1,0 +1,105 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Jersey 20';
+    text-decoration: none;
+}
+
+/* Navegador */
+
+nav{
+    
+    margin: 3%;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
+    grid-gap: 5%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#menu {
+    
+    justify-content: center;
+   
+    
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 6.5%;
+
+
+}
+
+#menu li{
+    
+    border-radius: 10px;
+    background-color: #c44444;
+
+    box-shadow: 0px 3px 2px #000;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    padding: 15%;
+
+}
+
+.item-nav{
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 25px;
+
+
+    text-shadow: 0px 3px 2px #000;
+
+}
+
+
+ 
+#cuenta {
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    grid-gap: 5%;
+
+    font-size: 30px;
+    color: #c44444;
+    text-decoration: none;
+   
+}
+
+.loginRegister{
+    text-decoration: none;
+    color: #c44444;
+}
+
+#logo {
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    
+}
+
+#logo_c{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
