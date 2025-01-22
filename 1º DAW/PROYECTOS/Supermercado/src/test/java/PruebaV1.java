@@ -1,7 +1,4 @@
-import org.example.modelos.Almacen;
-import org.example.modelos.Cliente;
-import org.example.modelos.Producto;
-import org.example.modelos.TipoProducto;
+import org.example.modelos.*;
 import org.w3c.dom.ls.LSOutput;
 
 import java.time.LocalDate;
@@ -17,9 +14,20 @@ public class PruebaV1 {
 
         System.out.println(Cafe);
 
-        Cliente Luis = new Cliente(
+        Cliente Luis = new Cliente(001,
+                "12345678A",
+                "Luis",
+                "Alvarez",
+                "Calle Fresa",
+                TipoCliente.PARTICULAR);
 
+        System.out.println(Luis);
+
+        Almacen almacen1 = new Almacen(
+                0001,
+                "Cafeteria",
+                700
         );
-        Almacen almacen1 = new Almacen();
+        System.out.println(almacen1);
     }
 }
