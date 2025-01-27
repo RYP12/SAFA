@@ -10,7 +10,8 @@ public class PruebaV1 {
                 "001",
                 "Cafe Irlandes",
                 LocalDate.of(2025, 12, 10),
-                TipoProducto.ALIMENTO);
+                TipoProducto.ALIMENTO
+                10.00);
 
         System.out.println(Cafe);
 
