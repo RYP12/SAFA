@@ -1,0 +1,16 @@
+
+body{
+    background: url(../recursos/imagenes/dramatic-scenery-3840x2160-20802.jpg) rgb(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+    
+}
