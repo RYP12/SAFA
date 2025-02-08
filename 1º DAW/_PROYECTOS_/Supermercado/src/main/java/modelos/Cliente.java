@@ -2,96 +2,44 @@ package modelos;
 
 import java.util.Objects;
 
-public class Cliente {
+public class Cliente extends Persona {
 
-    private int identificador;
-    private String dni;
-    private String nombre;
-    private String apellidos;
-    private String direccion;
-    private TipoCliente tipoCliente;
-    // CONSTRUCTORES
+    private TipoCliente TipoCliente;
 
+    public TipoCliente getTipoCliente() {
+        return TipoCliente;
+    }
 
-    public Cliente(int identificador, String dni, String nombre, String apellidos, String direccion, TipoCliente tipoCliente) {
-        this.identificador = identificador;
-        this.dni = dni;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.direccion = direccion;
-        this.tipoCliente = tipoCliente;
+    public void setTipoCliente(TipoCliente tipoCliente) {
+        TipoCliente = tipoCliente;
     }
 
     public Cliente() {
     }
 
-    // GETTER Y SETTER
-
-    public int getIdentificador() {
-        return identificador;
+    public Cliente(Integer identificador, String dni, String nombre, String apellido, String direccion, TipoCliente tipoCliente) {
+        super(identificador, dni, nombre, apellido, direccion);
+        TipoCliente = tipoCliente;
     }
-
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
-    }
-
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    // EQUALS Y HASHCODE
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
         Cliente cliente = (Cliente) o;
-        return identificador == cliente.identificador && Objects.equals(dni, cliente.dni) && Objects.equals(nombre, cliente.nombre) && Objects.equals(apellidos, cliente.apellidos) && Objects.equals(direccion, cliente.direccion);
+        return TipoCliente == cliente.TipoCliente;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(identificador, dni, nombre, apellidos, direccion);
+        return Objects.hash(super.hashCode(), TipoCliente);
     }
-
-    // ToString
-
 
     @Override
     public String toString() {
         return "Cliente{" +
-                "identificador=" + identificador +
-                ", dni='" + dni + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", apellidos='" + apellidos + '\'' +
-                ", direccion='" + direccion + '\'' +
+                super.toString() +
+                ", TipoCliente=" + TipoCliente +
                 '}';
     }
 }
