@@ -1,5 +1,7 @@
 package modelos;
 
+import java.util.Objects;
+
 public class Empleado extends Persona {
 
     private String numTelefono;

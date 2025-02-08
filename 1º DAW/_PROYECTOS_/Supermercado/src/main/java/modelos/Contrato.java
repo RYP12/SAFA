@@ -14,6 +14,9 @@ public class Contrato {
         this.tipoContrato = tipoContrato;
     }
 
+    public Contrato() {
+    }
+
     public int getIdentificador() {
         return identificador;
     }
