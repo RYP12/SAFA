@@ -1,6 +1,7 @@
 package utilidades;
 
 import modelos.Factura;
+import modelos.LineaFactura;
 
 import java.time.LocalDate;
 
@@ -18,15 +19,44 @@ public class UtilidadesFactura {
 
    // Calcular importe base de la factura
 
-    public double calcularBaseFactura(Factura factura) {
+    public Double calcularBaseFactura (Factura factura) {
 
+       Double baseImporte = 0.00;
        
-       for (double baseFactura = 0; factura.getLineasFactura().size() != 0; baseFactura++) {
+       for (LineaFactura producto : factura.getLineasFactura()) {
 
-           System.out.println(baseFactura);
+           Double importeProducto = producto.getProducto().getPrecio();
+
+           Integer cantidad = producto.getCantidad();
+
+           baseImporte += importeProducto * cantidad;
 
        }
+       return baseImporte;
     }
+
+    // Calcular total a pagar
+
+    public Double calcularTotalAPagar (Factura factura) {
+
+       Double impBase = factura.getImporteBase();
+
+       Double descuentos = factura.getDescuento();
+
+       Double iva = factura.getIva();
+
+       return (impBase + descuentos) * iva;
+
+    }
+
+
+
+
+
+
+
+
+
 }
 
 

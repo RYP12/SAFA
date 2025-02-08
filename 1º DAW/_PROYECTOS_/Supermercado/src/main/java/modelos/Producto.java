@@ -10,18 +10,19 @@ public class Producto {
     private String descripcion;
     private LocalDate fechaCaducidad;
     private TipoProducto tipoProducto;
-    public double precio;
+    private Almacen almacen;
+    private Double precio;
 
 
     // CONSTRUCTORES
 
-
-    public Producto(int identificador, String codigo, String descripcion, LocalDate fechaCaducidad, TipoProducto tipoProducto, double precio) {
+    public Producto(int identificador, String codigo, String descripcion, LocalDate fechaCaducidad, TipoProducto tipoProducto, Almacen almacen, Double precio) {
         this.identificador = identificador;
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.fechaCaducidad = fechaCaducidad;
         this.tipoProducto = tipoProducto;
+        this.almacen = almacen;
         this.precio = precio;
     }
 
@@ -70,22 +71,31 @@ public class Producto {
         this.tipoProducto = tipoProducto;
     }
 
-    public double getPrecio() {
+    public Almacen getAlmacen() {
+        return almacen;
+    }
+
+    public void setAlmacen(Almacen almacen) {
+        this.almacen = almacen;
+    }
+
+    public Double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(Double precio) {
         this.precio = precio;
     }
 
 
     // EQUALS y HASHCODE
 
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Producto producto = (Producto) o;
-        return identificador == producto.identificador && Double.compare(precio, producto.precio) == 0 && Objects.equals(codigo, producto.codigo) && Objects.equals(descripcion, producto.descripcion) && Objects.equals(fechaCaducidad, producto.fechaCaducidad) && tipoProducto == producto.tipoProducto;
+        return identificador == producto.identificador && Objects.equals(codigo, producto.codigo) && Objects.equals(descripcion, producto.descripcion) && Objects.equals(fechaCaducidad, producto.fechaCaducidad) && tipoProducto == producto.tipoProducto && Objects.equals(almacen, producto.almacen) && Objects.equals(precio, producto.precio);
     }
 
     @Override
@@ -105,6 +115,7 @@ public class Producto {
                 ", descripcion='" + descripcion + '\'' +
                 ", fechaCaducidad=" + fechaCaducidad +
                 ", tipoProducto=" + tipoProducto +
+                ", almacen=" + almacen +
                 ", precio=" + precio +
                 '}';
     }
