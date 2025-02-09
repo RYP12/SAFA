@@ -10,20 +10,27 @@
 
 /* Navegador */
 
-nav{
+#nav{
     
     margin: 3%;
     justify-content: center;
     align-items: center;
 
     display: grid;
-    grid-template-columns: 20% 50% 20%;
+    grid-template-columns: 20% 75%;
     grid-gap: 5%;
 }
 
-nav a {
-    text-decoration: none;
+.nav_c{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-gap: 5%;
+
+    justify-content: center;
+    align-items: center;
 }
+
+/* Cuerpo del navegador */
 
 #menu {
     
@@ -33,36 +40,28 @@ nav a {
     list-style: none;
 
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-gap: 6.5%;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 8.3%;
 
 
 }
 
-#menu li{
-    
-    border-radius: 10px;
-    background-color: #c44444;
-
-    box-shadow: 0px 3px 2px #000;
-    
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-
-    padding: 15%;
-
-}
 
 .item-nav{
+    
+    width: 100%;
+
+
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 25px;
+    background-color: #c44444;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 100%;
 
 
-    text-shadow: 0px 3px 2px #000;
+    text-shadow: 0px 3px 2px #00000067;
 
 }
 
@@ -94,7 +93,7 @@ nav a {
     justify-content: center;
     align-items: center;
 
-    width: 200px;
+    width: 100%;
     
 }
 
@@ -102,4 +101,12 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px){
+    
+    .nav_c{
+        overflow: hidden;
+    }
 }

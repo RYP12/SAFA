@@ -1,11 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Jersey+20&family=Jersey+25&display=swap');
 
+*{
+    font-family: 'Jersey 25', sans-serif;
+}
 body{
-    background: url(../recursos/imagenes/dramatic-scenery-3840x2160-20802.jpg) rgb(0, 0, 0, 0.3);
+    background-color: aliceblue;
     background-blend-mode: multiply;
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
 }
+
+.navbar{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.sub-nav{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+.logo{
+    width: 50%;
+    align-items: center;
+}
+
+#logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.navbar-brand{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    background-color: #c44444; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 15px 32px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+/* NAVEGADOR CUERPO*/
+
+#nav-cuerpo{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.nav-link-active{
+    color: #c44444; /* Color del texto */
+    background-color: #ffff;
+    border: none; /* Sin borde */
+    padding: 20px 30px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    text-decoration-color: #c44444; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombreado */
+}
+
+.nav-link{
+    color: #ffff; /* Color del texto */
+    background-color: #c44444;
+    border-radius: 10px; /* Sin borde */
+    padding: 20px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    text-decoration-color: #c44444; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombreado */
+}
+
+
+/* LOGIN Y REGISTER */
+
+#login {
+    
+    color: #c44444; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno */
+    text-align: center; /* Alineación del texto */
+    text-decoration-color: #c44444; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombreado */
+  }
+
+
 
 @media (max-width: 991px){
     .sidebar{
@@ -13,4 +100,15 @@ body{
         backdrop-filter: blur(10px);
     }
     
+    #logo-box{
+        
+        width: 50%;
+    }
+
+    
+    .nav-link{
+        color: #ffff; /* Color del texto */
+        font-size: 16px; /* Tamaño de la fuente */
+        text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombreado */
+    }
 }
