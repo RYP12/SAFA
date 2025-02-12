@@ -4,7 +4,7 @@
     font-family: 'Jersey 25', sans-serif;
 }
 body{
-    background-color: aliceblue;
+    
     background-blend-mode: multiply;
     background-position: center;
     background-size:cover;
@@ -21,8 +21,21 @@ body{
     
 }
 .logo{
-    width: 50%;
+    width: 100%;
     align-items: center;
+}
+
+#logo-caja{
+    width: 50%;
+}
+
+#logo {
+    
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    
 }
 
 #logo-box{
@@ -33,7 +46,7 @@ body{
 }
 
 .navbar-brand{
-    display: flexbox;
+    
     align-items: center;
     justify-content: center;
 }
@@ -56,16 +69,7 @@ body{
     grid-template-columns: 33% 33% 33%;
 }
 
-.nav-link-active{
-    color: #c44444; /* Color del texto */
-    background-color: #ffff;
-    border: none; /* Sin borde */
-    padding: 20px 30px; /* Relleno */
-    text-align: center; /* Alineación del texto */
-    text-decoration-color: #c44444; /* Sin subrayado */
-    font-size: 16px; /* Tamaño de la fuente */
-    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombreado */
-}
+
 
 .nav-link{
     color: #ffff; /* Color del texto */
@@ -76,6 +80,28 @@ body{
     text-decoration-color: #c44444; /* Sin subrayado */
     font-size: 16px; /* Tamaño de la fuente */
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombreado */
+
+}
+
+
+#activo{
+    color : #c44444;
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.nav-item{
+    width: 100px;
+    border-radius: 10px;
+
+    color : #c44444;
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover{
+    color : #c44444;
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -90,6 +116,21 @@ body{
     text-decoration-color: #c44444; /* Sin subrayado */
     font-size: 16px; /* Tamaño de la fuente */
     text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombreado */
+  }
+
+  #userbox{
+
+    background-color: #c44444;
+    color: #ffff;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+    margin: 0px;
   }
 
 
@@ -115,6 +156,11 @@ body{
 
     .nav-item{
         margin-bottom: 10px;
-        width: 30px;
+        width: 100px;
+    }
+
+    #userbox{
+        display: inline-flex;
+        width: 50%;
     }
 }

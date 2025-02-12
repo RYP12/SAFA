@@ -1,0 +1,141 @@
+
+/*---Presentación de la empresa---*/
+
+#pres-empresa{
+    border: 2px solid #c44444;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Columna imagen */
+
+#c-pres-img{
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#pres-img{
+
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    
+    
+    border-radius: 10px;
+
+    box-shadow: 
+    4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+   
+}
+
+/*Columna Slogan y presentación */
+
+
+
+#slogan{
+    color: #c44444;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0px 3px 2px #00000067;
+    
+}
+
+#presentacion{
+    color: #ffff;
+    font-size: 20px;
+    background-color: #c44444;
+
+    padding-left: 10px;
+    text-align: left;
+}
+
+/*---Carrusel y Reservas---*/
+
+#res-carrusel{
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+    width: 98%;
+    margin: 10px;
+    box-shadow:rgba(0, 0, 0, 0.5) 4px 4px 5px 0px;
+    
+}
+
+#carousel{
+    border-radius: 10px;
+}
+
+#carrusel{
+    border-radius: 10px;
+}
+
+/*---Reservas---*/
+
+/*---Barra de búsqueda---*/
+#c-barra-busqueda{
+    justify-content: start;
+    
+    
+}
+
+#barra-busqueda{
+    width: 93%;
+
+    color: #ffff;
+    background-color: #c44444;
+    
+}
+
+#barra-busqueda::placeholder{
+    color: #ffff;
+}
+
+/*---Botones---*/
+
+#boton1{
+    color: #ffff;
+    background-color: #c44444;
+    display: flex;
+    
+    margin-top: 10px;
+    padding: 15%;
+}
+
+/*condiciones*/
+
+#condiciones{
+
+    width: 100%;
+    text-align: left;
+    color: #ffff;
+    background-color: #c44444;
+    padding: 10px;
+    margin-top: 10px;
+    
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.5) 4px 4px 5px 0px;
+}
+
+/*---Media Queries---*/
+
+@media (max-width: 761px){
+    #slogan{
+        font-size: 10px;
+    }
+
+    #presentacion{
+        font-size: 10px;
+    }
+
+    #pres-img{
+        width: 100%;
+    }
+
+    #boton1{
+        padding: 10%;
+    }
+}
