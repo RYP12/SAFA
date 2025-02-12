@@ -1,0 +1,18 @@
+#form-general{
+    
+    justify-content: center;
+    color: #ffff;
+    
+}
+
+body{
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: #c44444;
+    padding: 80px;
+    border-radius: 10px;
+}

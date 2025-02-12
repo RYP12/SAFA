@@ -159,8 +159,5 @@ body{
         width: 100px;
     }
 
-    #userbox{
-        display: inline-flex;
-        width: 50%;
-    }
+    
 }
