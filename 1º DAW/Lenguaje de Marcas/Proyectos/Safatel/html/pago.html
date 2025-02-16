@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body class="container-fluid">
+    <div class="container">
+        <!-- Formulario -->
+        <form id="form-general" class="mt-5">
+            <!-- Título centrado -->
+            <div class="row justify-content-center mb-4">
+                <h1 class="text-center">RESERVAR</h1>
+            </div>
+
+            <!-- Campo de número de tarjeta -->
+            <div class="mb-3 row justify-content-center">
+                <label for="numeroTarjeta" class="col-4 col-form-label text-end">NÚMERO TARJETA:</label>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="numeroTarjeta" required>
+                </div>
+            </div>
+
+            <!-- Campo de fecha de caducidad -->
+            <div class="mb-3 row justify-content-center">
+                <label for="fechaCaducidad" class="col-4 col-form-label text-end">FECHA DE CADUCIDAD:</label>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="fechaCaducidad" required>
+                </div>
+            </div>
+
+            <!-- Campo de CVV -->
+            <div class="mb-3 row justify-content-center">
+                <label for="cvv" class="col-4 col-form-label text-end">CVV:</label>
+                <div class="col-6">
+                    <input type="password" class="form-control" id="cvv" required>
+                </div>
+            </div>
+
+            <!-- Botón de PAGAR (abre el modal) -->
+            <div class="row justify-content-center">
+                <div class="col-8 text-center">
+                    <button id="b-login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmacionPagoModal" style="text-decoration: none; color: #c44444;">
+                        PAGAR
+                    </button>
+                </div>
+            </div>
+
+            <!-- Botones de Atrás y Login -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-4 text-center">
+                    <a href="../html/inicio-1.html" class="btn btn-secondary" style="text-decoration: none; color: #ffff;">ATRÁS</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="../html/register.html" class="btn btn-success" style="text-decoration: none; color: #ffff;">LOGIN</a>
+                </div>
+            </div>
+        </form>
+
+        <!-- Modal de Confirmación de Pago -->
+        <div class="modal fade" id="confirmacionPagoModal" tabindex="-1" aria-labelledby="confirmacionPagoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Encabezado del Modal -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmacionPagoModalLabel">Confirmar Pago</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- Cuerpo del Modal -->
+                    <div class="modal-body">
+                        <p>PAGO REALIZADO CORRECTAMENTE</p>
+                       
+                    </div>
+                    <!-- Pie del Modal -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" id="confirmarPagoBtn"><a id="a-pago" href="../html/inicio-2.html">INICIO</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    
+</body>
+</html>

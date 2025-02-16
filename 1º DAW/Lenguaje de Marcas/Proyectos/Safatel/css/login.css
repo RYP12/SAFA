@@ -36,3 +36,8 @@ form{
     margin-top: 10px;
     box-shadow: 1px 1px 5px #000000;
 }
+
+#a-pago{
+    text-decoration: none;
+    color: #ffff;
+}

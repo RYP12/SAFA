@@ -4,24 +4,34 @@
     gap: 5%;
     
     justify-content: center;
-    align-items: center;
+
+    margin: 5%;
+    
 
     
 }
 
-#regiones{
+.regiones{
     display: grid;
-    grid-template-rows: 15% 15% 15% 15% 15% 15%;
-    gap: 5%;
+    grid-template-rows: 10% 90%;
+
+    justify-content: center;
+    
+    padding: 20px;
+    
     
 
-    border: solid 1px #c44444;
+    width: 100%;
+
+    border: solid 2px #c44444;
+
+    border-radius: 10px;
 }
 
 #lugares{
     display: grid;
-    grid-template-rows: 15% 15% 15% 15% 15%;
-    gap: 5%;
+    grid-template-rows: 10% 10% 10% 10% 10%;
+    gap: 10%;
 
     justify-content: center;
     align-items: center;
@@ -30,9 +40,53 @@
     padding: 10px;
 }
 
+#titulo{
+    color: #c44444;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0px 3px 2px #00000067;
+
+    align-items: center;
+}
+
 .tarjetas{
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
 
     justify-content: center;
+
+    color: #c44444;
+}
+
+.lugares-secciones{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c44444;
+
+
+    padding: 15px;
+    width: 200px;
+
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+}
+
+@media (max-width: 400px){
+    .lugares-secciones{
+        width: 90px;
+    }
+
+    .lugares-secciones a{
+        font-size: 10px;
+    }
+
+    #titulo h1{
+        font-size: 20px;
+    }
+
+    .regiones{
+        border:none;
+    }
 }

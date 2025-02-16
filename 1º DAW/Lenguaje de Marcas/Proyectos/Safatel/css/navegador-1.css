@@ -129,10 +129,11 @@ body{
     justify-content: center;
     align-items: center;
     width: 30%;
-
+    padding: 10px;
     margin: 0px;
   }
 
+  
 
 
 @media (max-width: 991px){
