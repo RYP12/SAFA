@@ -1,0 +1,45 @@
+<cancion duracion = "3:40" año = "1979">
+
+    <titulo>
+        Rock with you
+    </titulo>
+
+    <compositores>
+        <compositor>
+            <nombre>
+                Rod
+            </nombre>
+            <apellido>
+                Temperton
+            </apellido>
+        </compositor>
+    </compositores>
+
+    <discografica>
+        Epic
+    </discografica>
+
+    <productores>
+        <productor>
+            <nombre>
+                Quincy
+            </nombre>
+            <apellido>
+                Jones
+            </apellido>
+        </productor>
+    </productores>
+
+
+    <artitstas></artistas>
+        <artista>
+            <nombre>
+                Michael
+            </nombre>
+            <apellido>
+                Jackson
+            </apellido>
+        </artista>
+
+
+</cancion>
