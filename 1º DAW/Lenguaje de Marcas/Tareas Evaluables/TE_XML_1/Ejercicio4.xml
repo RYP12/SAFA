@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coleccion_ebooks>
+    <ebook>
+        <titulo>Lenguaje de Marcas</titulo>
+        <autores>
+            <autor>Alex Tolon</autor>
+        </autores>
+        <modulo>LMSGI</modulo>
+        <licencia>CC3.0</licencia>
+        <fecha_publicacion>2011-09-15</fecha_publicacion>
+        <isbn>978929212456</isbn>
+        <lecciones>
+            <leccion>
+                <parrafos>
+                    <parrafo>Este es el primer párrafo de la primera lección.</parrafo>
+                    <parrafo>Este es el segundo párrafo de la primera lección.</parrafo>
+                </parrafos>
+                <imagen>imagen1.jpg</imagen>
+                <autoevaluaciones>
+                    <autoevaluacion>Autoevaluación 1</autoevaluacion>
+                    <autoevaluacion>Autoevaluación 2</autoevaluacion>
+                </autoevaluaciones>
+                <ejercicio>Ejercicio 1</ejercicio>
+            </leccion>
+            <leccion>
+                <parrafos>
+                    <parrafo>Este es el primer párrafo de la segunda lección.</parrafo>
+                    <parrafo>Este es el segundo párrafo de la segunda lección.</parrafo>
+                    <parrafo>Este es el tercer párrafo de la segunda lección.</parrafo>
+                </parrafos>
+                <animacion>animacion1.gif</animacion>
+                <autoevaluaciones>
+                    <autoevaluacion>Autoevaluación 3</autoevaluacion>
+                </autoevaluaciones>
+                <ejercicio>Ejercicio 2</ejercicio>
+            </leccion>
+        </lecciones>
+    </ebook>
+    <ebook>
+        <titulo>Empresa e Iniciativa Emprendedora</titulo>
+        <autores>
+            <autor>Miguel Ángel Sánchez</autor>
+            <autor>Xabier Epelde</autor>
+        </autores>
+        <modulo>EIE</modulo>
+        <licencia>Public Domain</licencia>
+        <fecha_publicacion>2010-06-25</fecha_publicacion>
+        <isbn>978439288416</isbn>
+        <lecciones>
+            <leccion>
+                <parrafos>
+                    <parrafo>Este es el primer párrafo de la lección.</parrafo>
+                    <parrafo>Este es el segundo párrafo de la lección.</parrafo>
+                    <parrafo>Este es el tercer párrafo de la lección.</parrafo>
+                </parrafos>
+                <animaciones>
+                    <animacion>animacion2.gif</animacion>
+                    <animacion>animacion3.gif</animacion>
+                </animaciones>
+                <autoevaluaciones>
+                    <autoevaluacion>Autoevaluación 4</autoevaluacion>
+                </autoevaluaciones>
+                <ejercicios>
+                    <ejercicio>Ejercicio 3</ejercicio>
+                    <ejercicio>Ejercicio 4</ejercicio>
+                </ejercicios>
+            </leccion>
+        </lecciones>
+    </ebook>
+</coleccion_ebooks>

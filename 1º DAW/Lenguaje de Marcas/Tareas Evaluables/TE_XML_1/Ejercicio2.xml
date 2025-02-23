@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <cancion duracion = "3:40" año = "1979">
 
     <titulo>
         Rock with you
     </titulo>
-
     <compositores>
         <compositor>
             <nombre>
@@ -14,11 +15,9 @@
             </apellido>
         </compositor>
     </compositores>
-
     <discografica>
         Epic
     </discografica>
-
     <productores>
         <productor>
             <nombre>
@@ -29,9 +28,7 @@
             </apellido>
         </productor>
     </productores>
-
-
-    <artitstas></artistas>
+    <artistas>
         <artista>
             <nombre>
                 Michael
@@ -40,6 +37,5 @@
                 Jackson
             </apellido>
         </artista>
-
-
+    </artistas>
 </cancion>

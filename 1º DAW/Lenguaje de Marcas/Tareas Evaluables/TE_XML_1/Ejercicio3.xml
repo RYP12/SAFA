@@ -1,1 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<servidores>
+    <servidor>
+        <IDServidor>SVR001</IDServidor>
+        <Ubicacion>Madrid</Ubicacion>
+        <Marca>HP</Marca>
+        <Uso>Correo</Uso>
+        <Fecha_UF>2023-10-01</Fecha_UF>
+        <CaracteristicasHardware>
+            <Placa tplaca="ATX">X570</Placa>
+            <TipoMem>DDR4</TipoMem>
+            <CantMem amp="Ghz">16</CantMem>
+            <VeloMem veloc="Ghz">3200</VeloMem>
+            <TecnHD>SSD</TecnHD>
+            <CapacHD ahd="Tb">1</CapacHD>
+            <TarjRed>Gigabit Ethernet</TarjRed>
+        </CaracteristicasHardware>
+    </servidor>
+    <servidor>
+        <IDServidor>SVR002</IDServidor>
+        <Ubicacion>Barcelona</Ubicacion>
+        <Marca>IBM</Marca>
+        <Uso>ERP/CRM</Uso>
+        <Fecha_UF>2023-09-15</Fecha_UF>
+        <CaracteristicasHardware>
+            <Placa tplaca="AT">B450</Placa>
+            <TipoMem>DDR4</TipoMem>
+            <CantMem amp="Ghz">32</CantMem>
+            <VeloMem veloc="Ghz">2666</VeloMem>
+            <TecnHD>HDD</TecnHD>
+            <CapacHD ahd="Tb">2</CapacHD>
+            <TarjRed>10 Gigabit Ethernet</TarjRed>
+        </CaracteristicasHardware>
+    </servidor>
+    <servidor>
+        <IDServidor>SVR003</IDServidor>
+        <Ubicacion>Valencia</Ubicacion>
+        <Marca>HP</Marca>
+        <Uso>DiseñoGráfico</Uso>
+        <Fecha_UF>2023-08-20</Fecha_UF>
+        <CaracteristicasHardware>
+            <Placa tplaca="ATX">Z690</Placa>
+            <TipoMem>DDR5</TipoMem>
+            <CantMem amp="Ghz">64</CantMem>
+            <VeloMem veloc="Ghz">4800</VeloMem>
+            <TecnHD>SSD</TecnHD>
+            <CapacHD ahd="Tb">4</CapacHD>
+            <TarjRed>Gigabit Ethernet</TarjRed>
+        </CaracteristicasHardware>
+    </servidor>
+</servidores>
