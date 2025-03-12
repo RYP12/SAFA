@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="XSLT.xslt"?>
+
+<canasta>
+    <producto IdProducto = "057">
+        <nombre>Manzana</nombre>
+        <origen>México</origen>
+        <cantidad>20</cantidad>
+        <precio>14.5</precio>
+    </producto>
+    <producto IdProducto = "230">
+        <nombre>Pera</nombre>
+        <origen>Argentina</origen>
+        <cantidad>32</cantidad>
+        <precio>12.8</precio>
+    </producto>
+    <producto IdProducto = "218">
+        <nombre>Mango</nombre>
+        <origen>Colombia</origen>
+        <cantidad>10</cantidad>
+        <precio>18.5</precio>
+    </producto>
+</canasta>
