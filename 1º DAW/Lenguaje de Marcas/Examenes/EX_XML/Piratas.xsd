@@ -1,0 +1,62 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="piratas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name = "pirata">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="datos_actor">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"></xs:element>
+                                        <xs:element name="apellidos" type="xs:string"></xs:element>
+                                        <xs:element name="sexo" type="xs:string"></xs:element>
+                                        <xs:element name="nacimiento" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name = "peliculas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="pelicula">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="datos">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="titulo" type="xs:string"></xs:element>
+                                                                <xs:element name="saga" type="xs:string"></xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name = "roles">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="rol">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tipo_rol" type="xs:string"></xs:element>
+                                                    <xs:element name="barco" type="xs:string"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        
+                    </xs:complexType>
+                
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="nombre" type="xs:string"/>
+            <xs:attribute name="imagen" type="xs:anyURI"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
