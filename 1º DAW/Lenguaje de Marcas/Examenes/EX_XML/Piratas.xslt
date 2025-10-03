@@ -40,9 +40,54 @@
                         </th>
 
                         <th>
-                        
+                            <img src="https://i.pinimg.com/736x/b3/35/72/b33572ca7c8563582a2695272a3065e0.jpg" />
                         </th>
 
+                    </tr>
+
+                    <tr>
+                        <th>Películas</th>
+                        <th>Roles</th>
+                    </tr>
+
+                    <tr>
+
+                        <th>
+                            <tr>
+                                <th>TITULO</th>
+                                <th>SAGA</th>
+                            </tr>
+
+                            <tr>
+                                <xsl:for-each select="piratas/pirata/peliculas/pelicula/datos">
+                                    <td>
+                                        <xsl:value-of select="titulo"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="saga"/>
+                                    </td>
+                                </xsl:for-each>
+                            </tr>
+                        </th>
+
+                        <th>
+
+                            <tr>
+                                <th>TIPO</th>
+                                <th>BARCO</th>
+                            </tr>
+
+                            <tr>
+                                <xsl:for-each select="piratas/pirata/roles/rol">
+                                    <td>
+                                        <xsl:value-of select="tipo_rol"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="barco"/>
+                                    </td>
+                                </xsl:for-each>
+                            </tr>
+                        </th>
 
                     </tr>
                 </table>
